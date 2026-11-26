@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SCELLÉ 二層美容液マスク｜封を切る、その瞬間まで。（デザイン案C）</title>
+<meta name="description" content="酸化しやすいグルタチオンを、シートと分けて封じこめた二層美容液マスク。">
+<!-- 下書きの間は noindex。公開するタイプは build.py の RELEASE で切り替える -->
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://beauty-log.jp/draft/c/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="SCELLÉ">
+<meta property="og:url" content="https://yoshinobu0911-ctrl.github.io/beauty-log-site/draft/c/">
+<meta property="og:title" content="SCELLÉ 二層美容液マスク｜封を切る、その瞬間まで。">
+<meta property="og:description" content="酸化しやすいグルタチオンを、シートと分けて封じこめた二層美容液マスク。">
+<meta property="og:image" content="https://yoshinobu0911-ctrl.github.io/beauty-log-site/draft/c/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root { --navy:#15213B; --navy-d:#0E1729; --navy-l:#22335C; --gold:#C8A96B; --gold-l:#E6D3A3; --ivory:#F4F1EA; --ivory-d:#EAE3D4; --ink:#1A2236; --sub:#6B6F7A; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; font-family:"Noto Serif JP",serif; color:var(--ink); background:var(--ivory); line-height:2.05; letter-spacing:.06em; font-feature-settings:"palt"; -webkit-font-smoothing:antialiased; }
+a { color:inherit; }
+.en { font-family:"Cormorant Garamond",serif; letter-spacing:.22em; font-feature-settings:"lnum"; }
+.wrap { max-width:1100px; margin:0 auto; padding:0 28px; }
+.note-bar { background:#0A1120; color:var(--gold-l); font-size:12px; text-align:center; padding:6px 12px; }
+sup { font-size:.55em; vertical-align:super; line-height:0; }
+.gold-text { background:linear-gradient(100deg,#B8955A,#EAD9AC 45%,#C8A96B 70%,#A9864D); -webkit-background-clip:text; background-clip:text; color:transparent; }
+
+.hd { position:sticky; top:0; z-index:20; background:rgba(14,23,41,.96); backdrop-filter:blur(10px); border-bottom:1px solid rgba(200,169,107,.25); }
+.hd .wrap { display:flex; align-items:center; justify-content:space-between; height:64px; }
+.logo { font:500 22px "Cormorant Garamond",serif; letter-spacing:.42em; text-decoration:none; }
+.hd nav { display:flex; gap:30px; font-size:13px; color:var(--ivory); }
+.hd nav a { text-decoration:none; opacity:.8; }
+.hd nav a:hover { opacity:1; }
+.btn { display:inline-flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; padding:15px 40px; font-size:15px; letter-spacing:.16em; border:1px solid var(--gold); color:var(--gold-l); background:transparent; transition:background .3s, color .3s; }
+.btn:hover { background:var(--gold); color:var(--navy-d); }
+.btn small { font-size:11px; letter-spacing:.06em; opacity:.85; }
+.btn.sm { padding:7px 20px; font-size:12px; }
+.btn.solid { background:var(--navy); color:var(--gold-l); border-color:var(--navy); }
+.btn.solid:hover { background:var(--navy-d); }
+
+/* first view */
+.fv { background:radial-gradient(ellipse at 62% 34%, #26386A 0%, #15213B 52%, #0B1324 100%); color:var(--ivory); position:relative; overflow:hidden; }
+.fv::after { content:""; position:absolute; inset:0; background:radial-gradient(circle at 70% 45%, rgba(230,211,163,.16), transparent 40%); pointer-events:none; }
+.fv .wrap { position:relative; z-index:1; display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; min-height:calc(100svh - 94px); padding-top:56px; padding-bottom:64px; }
+.seal { width:96px; height:96px; margin-bottom:26px; filter:drop-shadow(0 8px 18px rgba(0,0,0,.45)); animation:seal-in 1.6s cubic-bezier(.2,.8,.2,1) both .2s; }
+.seal svg { width:100%; height:100%; display:block; }
+@keyframes seal-in { from { opacity:0; transform:scale(1.25) rotate(-12deg); } to { opacity:1; transform:none; } }
+.fv .eyebrow { font-size:13px; color:var(--gold); }
+.fv h1 { font-weight:300; font-size:clamp(36px,5vw,60px); line-height:1.6; letter-spacing:.16em; margin:16px 0 0; }
+.gline { display:block; height:1px; width:140px; margin:30px 0; background:linear-gradient(90deg,var(--gold),transparent); transform-origin:left; animation:gline 2s cubic-bezier(.2,.8,.2,1) both .9s; }
+@keyframes gline { from { transform:scaleX(0); } to { transform:scaleX(1); } }
+.fv .lead { font-size:15.5px; opacity:.9; margin:0 0 38px; }
+.fv .fn { font-size:11px; opacity:.6; margin-top:20px; }
+.pk { width:min(400px,76vw); margin:0 auto; position:relative; }
+.pk::before { content:""; position:absolute; inset:8% -8%; background:radial-gradient(ellipse, rgba(230,211,163,.28), transparent 65%); filter:blur(20px); }
+.pk svg { position:relative; display:block; width:100%; height:auto; filter:drop-shadow(0 36px 46px rgba(0,0,0,.55)); }
+
+.sec { padding:120px 0; }
+.sec.navy { background:var(--navy); color:var(--ivory); }
+.sec.deep { background:var(--navy-d); color:var(--ivory); }
+.sec.ivory-d { background:var(--ivory-d); }
+.sh { text-align:center; margin-bottom:60px; }
+.sh .en { font-size:14px; color:var(--gold); }
+.sh h2 { font-weight:400; font-size:clamp(26px,3.3vw,38px); line-height:1.7; margin:10px 0 0; letter-spacing:.14em; }
+.sh .rule { display:block; width:1px; height:44px; margin:22px auto 0; background:linear-gradient(var(--gold),transparent); }
+.sh p { max-width:620px; margin:18px auto 0; color:var(--sub); }
+.navy .sh p, .deep .sh p { color:rgba(244,241,234,.7); }
+
+.two { display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:center; }
+.two h2 { font-weight:400; font-size:clamp(28px,3.4vw,40px); letter-spacing:.16em; line-height:1.7; margin:8px 0 28px; }
+.two p { margin:0 0 18px; }
+.dia svg { width:100%; height:auto; display:block; }
+
+.ritual { display:grid; grid-template-columns:repeat(3,1fr); gap:0; border-top:1px solid rgba(200,169,107,.35); border-bottom:1px solid rgba(200,169,107,.35); }
+.ritual .r { padding:44px 34px; text-align:center; border-left:1px solid rgba(200,169,107,.35); }
+.ritual .r:first-child { border-left:0; }
+.ritual .num { font:400 46px "Cormorant Garamond",serif; color:var(--gold); line-height:1; }
+.ritual svg { width:84px; height:84px; display:block; margin:22px auto 14px; }
+.ritual h3 { font-weight:400; font-size:20px; margin:0 0 10px; letter-spacing:.14em; }
+.ritual p { margin:0; font-size:14px; opacity:.8; text-align:left; }
+
+.mol svg { width:100%; height:auto; display:block; }
+
+.night { display:grid; grid-template-columns:repeat(4,1fr); position:relative; }
+.night::before { content:""; position:absolute; left:12.5%; right:12.5%; top:17px; height:1px; background:linear-gradient(90deg,transparent,var(--gold),transparent); }
+.night .t { text-align:center; padding:0 10px; position:relative; }
+.night .dot { width:35px; height:35px; margin:0 auto 18px; border-radius:50%; border:1px solid var(--gold); display:grid; place-items:center; background:var(--navy-d); }
+.night .dot i { width:9px; height:9px; border-radius:50%; background:var(--gold); }
+.night .t.main .dot { background:var(--gold); }
+.night .t.main .dot i { background:var(--navy-d); }
+.night .en { font-size:13px; color:var(--gold); display:block; }
+.night h3 { font-weight:400; font-size:17px; margin:6px 0 4px; letter-spacing:.12em; }
+.night p { margin:0; font-size:13px; opacity:.7; }
+
+.photo { aspect-ratio:4/5; background:linear-gradient(150deg,#E5DCC9,#D8CCB3); display:grid; place-items:center; text-align:center; color:#6f6553; font-size:13px; padding:28px; position:relative; }
+.photo::after { content:""; position:absolute; inset:14px; border:1px solid rgba(255,255,255,.6); }
+.photo b { display:block; font:500 italic 22px "Cormorant Garamond",serif; color:var(--ink); letter-spacing:.1em; }
+
+.voices { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+.voice { border:1px dashed rgba(200,169,107,.55); padding:28px; font-size:14px; opacity:.85; min-height:170px; }
+.voice b { display:block; font-weight:500; color:var(--gold-l); margin-bottom:8px; }
+
+.offer { display:grid; grid-template-columns:.85fr 1.15fr; gap:64px; align-items:center; background:#fff; padding:56px; box-shadow:0 30px 60px rgba(21,33,59,.08); position:relative; }
+.offer::before { content:""; position:absolute; inset:12px; border:1px solid rgba(200,169,107,.45); pointer-events:none; }
+.offer .pk2 { background:radial-gradient(ellipse at 50% 40%, #26386A, #0E1729); padding:36px; }
+.offer .pk2 svg { width:100%; height:auto; display:block; filter:drop-shadow(0 20px 30px rgba(0,0,0,.5)); }
+.offer .logo { font-size:28px; color:var(--navy); }
+.offer h3 { font-weight:400; font-size:19px; margin:4px 0 24px; letter-spacing:.12em; }
+.price div { display:flex; justify-content:space-between; align-items:baseline; padding:16px 0; border-bottom:1px solid var(--ivory-d); }
+.price b { font:500 28px "Cormorant Garamond",serif; letter-spacing:.06em; font-feature-settings:"lnum"; }
+.price b small { font:400 12px "Noto Serif JP",serif; color:var(--sub); margin-left:4px; }
+.offer .btn { width:100%; margin-top:30px; padding:18px; }
+.tiny { font-size:12px; color:var(--sub); margin-top:12px; }
+
+.faq { max-width:800px; margin:0 auto; }
+.faq details { border-bottom:1px solid rgba(26,34,54,.15); }
+.faq summary { list-style:none; cursor:pointer; padding:24px 40px 24px 0; position:relative; font-size:16px; }
+.faq summary::-webkit-details-marker { display:none; }
+.faq summary::before { content:"Q."; font:500 20px "Cormorant Garamond",serif; color:var(--gold); margin-right:14px; }
+.faq summary::after { content:""; position:absolute; right:10px; top:50%; width:14px; height:1px; background:var(--ink); }
+.faq details:not([open]) summary { }
+.faq details p { margin:0 0 24px 34px; color:var(--sub); font-size:15px; }
+
+.info { display:grid; grid-template-columns:170px 1fr; font-size:14px; border-top:1px solid rgba(26,34,54,.15); }
+.info dt, .info dd { margin:0; padding:16px 0; border-bottom:1px solid rgba(26,34,54,.15); }
+.info dt { color:var(--sub); }
+.fns { font-size:11.5px; color:var(--sub); margin-top:22px; }
+
+.ft { background:var(--navy-d); color:rgba(244,241,234,.7); text-align:center; padding:64px 0 110px; font-size:13px; }
+.ft .logo { display:inline-block; font-size:26px; margin-bottom:18px; }
+.ft nav { display:flex; justify-content:center; gap:26px; flex-wrap:wrap; margin-bottom:16px; }
+.ft nav a { text-decoration:none; }
+
+.sticky { position:fixed; left:0; right:0; bottom:0; z-index:30; display:none; padding:10px 14px calc(10px + env(safe-area-inset-bottom)); background:rgba(14,23,41,.94); border-top:1px solid rgba(200,169,107,.3); }
+.sticky .btn { width:100%; letter-spacing:.06em; padding:14px 10px; }
+
+.js .reveal { opacity:0; transform:translateY(22px); transition:opacity 1.2s ease, transform 1.2s ease; }
+.js .reveal.is-in { opacity:1; transform:none; }
+
+@media (max-width:900px) {
+  .hd nav { display:none; }
+  .fv .wrap { grid-template-columns:1fr; text-align:center; min-height:auto; padding-top:44px; gap:44px; }
+  .seal { display:none; }
+  .fv .wrap { padding-top:30px; gap:30px; }
+  .note-bar { font-size:11px; }
+  .gline { margin:26px auto; background:linear-gradient(90deg,transparent,var(--gold),transparent); transform-origin:center; }
+  .pk { order:-1; width:min(220px,54vw); }
+  .two, .offer { grid-template-columns:1fr; gap:40px; }
+  .offer { padding:34px 22px; }
+  .ritual { grid-template-columns:1fr; }
+  .ritual .r { border-left:0; border-top:1px solid rgba(200,169,107,.35); padding:36px 10px; }
+  .ritual .r:first-child { border-top:0; }
+  .night { grid-template-columns:1fr; gap:28px; }
+  .night::before { left:50%; right:auto; top:0; bottom:0; width:1px; height:auto; background:linear-gradient(transparent,var(--gold),transparent); }
+  .night .t { background:var(--navy-d); padding:6px 0; }
+  .voices { grid-template-columns:1fr; }
+  .info { grid-template-columns:110px 1fr; }
+  .sec { padding:84px 0; }
+  .sticky { display:block; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .seal, .gline { animation:none; }
+  .js .reveal { opacity:1; transform:none; transition:none; }
+  html { scroll-behavior:auto; }
+}
+</style>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<div class="note-bar">デザイン案C（ラグジュアリー）｜名前・価格・成分・写真は仮です</div>
+
+<header class="hd">
+  <div class="wrap">
+    <a class="logo gold-text" href="#top">SCELLÉ</a>
+    <nav><a href="#sealed">鮮度のこと</a><a href="#ritual">使い方</a><a href="#ingredient">成分</a><a href="#gift">贈りもの</a></nav>
+    <a class="btn sm" href="#offer">購入する</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="fv">
+    <div class="wrap">
+      <div>
+        <div class="seal"><svg xmlns="http://www.w3.org/2000/svg" viewBox="51 52 28 28" role="img" aria-label="封蝋のマーク" style="letter-spacing:0"><style>.c-en{font-family:"Cormorant Garamond",serif;font-feature-settings:"lnum"}.c-ja{font-family:"Noto Serif JP",serif;font-feature-settings:"palt"}</style><defs><linearGradient id="cS-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8955A"/><stop offset=".45" stop-color="#EAD9AC"/><stop offset=".7" stop-color="#C8A96B"/><stop offset="1" stop-color="#A9864D"/></linearGradient><path id="cS-ring" d="M65 66 m-10 0 a10 10 0 1 1 20 0 a10 10 0 1 1 -20 0"/></defs><g class="seal-spin"><path d="M78.04 66.00 L78.12 67.38 L77.64 68.69 L77.20 69.96 L76.84 71.27 L76.08 72.39 L74.88 73.18 L73.84 73.96 L73.28 75.19 L72.73 76.64 L71.69 77.59 L70.29 77.88 L68.91 78.05 L67.64 78.42 L66.33 78.61 L65.00 78.29 L63.74 77.95 L62.42 78.15 L60.92 78.57 L59.51 78.34 L58.48 77.30 L57.65 76.12 L56.68 75.24 L55.66 74.41 L54.95 73.30 L54.43 72.10 L53.57 71.09 L52.42 70.09 L51.75 68.82 L52.02 67.36 L52.64 66.00 L52.86 64.72 L52.80 63.41 L53.05 62.12 L53.64 60.94 L54.08 59.69 L54.33 58.25 L54.97 56.97 L56.28 56.32 L57.80 56.09 L58.99 55.59 L59.96 54.67 L61.06 53.89 L62.36 53.58 L63.67 53.35 L65.00 52.89 L66.40 52.69 L67.70 53.31 L68.77 54.41 L69.84 55.13 L71.18 55.30 L72.58 55.57 L73.67 56.37 L74.54 57.41 L75.50 58.37 L76.43 59.40 L76.78 60.76 L76.58 62.24 L76.60 63.53 L77.28 64.71 Z" fill="#A9864D"/><circle cx="65" cy="66" r="11.6" fill="url(#cS-gold)"/><circle cx="65" cy="66" r="8.6" fill="none" stroke="#15213B" stroke-width=".25" opacity=".55"/><text class="c-en" font-size="1.62" fill="#15213B" letter-spacing=".2" font-weight="600"><textPath href="#cS-ring" textLength="61.5" lengthAdjust="spacing">SEALED FRESHNESS · GLUTATHIONE SERUM MASK · </textPath></text><text x="65" y="69.1" class="c-en" font-size="9.0" fill="#15213B" text-anchor="middle" font-weight="600" font-style="italic">S</text></g></svg></div>
+        <div class="eyebrow en">GLUTATHIONE SERUM MASK</div>
+        <h1>封を切る、<br>その瞬間まで。</h1>
+        <span class="gline" aria-hidden="true"></span>
+        <p class="lead">酸化しやすいグルタチオン<sup>※1</sup>を、<br>シートと分けて封じこめました。<br>今夜、その封を切るのはあなたです。<br>一日の終わりの肌に、ハリとうるおいを。</p>
+        <a class="btn" href="#offer">購入する<small>1枚 ¥○,○○○（税込）〜</small></a>
+        <p class="fn">※1 整肌成分</p>
+      </div>
+      <div class="pk"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 150" role="img" aria-label="タイプC パッケージ表面" style="letter-spacing:0" ><style>.c-en{font-family:"Cormorant Garamond",serif;font-feature-settings:"lnum"}.c-ja{font-family:"Noto Serif JP",serif;font-feature-settings:"palt"}</style><defs><radialGradient id="cF-bg" cx=".5" cy=".38" r=".85"><stop offset="0" stop-color="#22335C"/><stop offset=".55" stop-color="#15213B"/><stop offset="1" stop-color="#0E1729"/></radialGradient><linearGradient id="cF-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8955A"/><stop offset=".45" stop-color="#EAD9AC"/><stop offset=".7" stop-color="#C8A96B"/><stop offset="1" stop-color="#A9864D"/></linearGradient><path id="cF-ring" d="M65 66 m-10 0 a10 10 0 1 1 20 0 a10 10 0 1 1 -20 0"/></defs><rect width="130" height="150" rx="4" fill="url(#cF-bg)"/><line x1="0" y1="9" x2="6" y2="9" stroke="#C8A96B" stroke-width=".25" stroke-dasharray=".8 .8"/><text x="7.4" y="9.75" class="c-ja" font-size="1.8" fill="#C8A96B" opacity="0.8">ここから切る</text><rect x="6" y="13" width="118" height="131" rx="1.5" fill="none" stroke="url(#cF-gold)" stroke-width=".3"/><rect x="7.4" y="14.4" width="115.2" height="128.2" rx="1" fill="none" stroke="#C8A96B" stroke-width=".15" opacity=".6"/><text x="65" y="24.5" class="c-en" font-size="2.4" fill="#C8A96B" text-anchor="middle" font-weight="600" letter-spacing="1.3">NIGHT SERUM MASK</text><text x="65" y="38.5" class="c-en" font-size="13.5" fill="url(#cF-gold)" text-anchor="middle" font-weight="500" letter-spacing="2.6">SCELLÉ</text><text x="65" y="45.4" class="c-en" font-size="2.6" fill="#EFE8DA" text-anchor="middle" font-weight="600" letter-spacing="1.1" opacity="0.88">GLUTATHIONE SERUM MASK</text><text x="65" y="51.4" class="c-ja" font-size="2.6" fill="#EFE8DA" text-anchor="middle" opacity="0.88">グルタチオン<tspan font-size="1.7" dy="-1.1">※1</tspan><tspan dy="1.1"> 二層美容液マスク</tspan></text><line x1="9" y1="66" x2="50.5" y2="66" stroke="url(#cF-gold)" stroke-width=".35"/><line x1="79.5" y1="66" x2="121" y2="66" stroke="url(#cF-gold)" stroke-width=".35"/><path d="M78.04 66.00 L78.12 67.38 L77.64 68.69 L77.20 69.96 L76.84 71.27 L76.08 72.39 L74.88 73.18 L73.84 73.96 L73.28 75.19 L72.73 76.64 L71.69 77.59 L70.29 77.88 L68.91 78.05 L67.64 78.42 L66.33 78.61 L65.00 78.29 L63.74 77.95 L62.42 78.15 L60.92 78.57 L59.51 78.34 L58.48 77.30 L57.65 76.12 L56.68 75.24 L55.66 74.41 L54.95 73.30 L54.43 72.10 L53.57 71.09 L52.42 70.09 L51.75 68.82 L52.02 67.36 L52.64 66.00 L52.86 64.72 L52.80 63.41 L53.05 62.12 L53.64 60.94 L54.08 59.69 L54.33 58.25 L54.97 56.97 L56.28 56.32 L57.80 56.09 L58.99 55.59 L59.96 54.67 L61.06 53.89 L62.36 53.58 L63.67 53.35 L65.00 52.89 L66.40 52.69 L67.70 53.31 L68.77 54.41 L69.84 55.13 L71.18 55.30 L72.58 55.57 L73.67 56.37 L74.54 57.41 L75.50 58.37 L76.43 59.40 L76.78 60.76 L76.58 62.24 L76.60 63.53 L77.28 64.71 Z" fill="#A9864D"/><circle cx="65" cy="66" r="11.6" fill="url(#cF-gold)"/><circle cx="65" cy="66" r="8.6" fill="none" stroke="#15213B" stroke-width=".25" opacity=".55"/><text class="c-en" font-size="1.62" fill="#15213B" letter-spacing=".2" font-weight="600"><textPath href="#cF-ring" textLength="61.5" lengthAdjust="spacing">SEALED FRESHNESS · GLUTATHIONE SERUM MASK · </textPath></text><text x="65" y="69.1" class="c-en" font-size="9.0" fill="#15213B" text-anchor="middle" font-weight="600" font-style="italic">S</text><text x="65" y="92" class="c-ja" font-size="3.5" fill="#EFE8DA" text-anchor="middle" letter-spacing="0.35">封を切る、その瞬間まで。</text><text x="65" y="98.8" class="c-en" font-size="3.1" fill="#C8A96B" text-anchor="middle" letter-spacing="0.2" font-style="italic">Break the seal, right before use.</text><text x="65" y="118.5" class="c-ja" font-size="2.15" fill="#EFE8DA" text-anchor="middle" opacity="0.78">I 押す　　II なじませる　　III ひらく</text><text x="65" y="134.5" class="c-en" font-size="2.5" fill="#C8A96B" text-anchor="middle" font-weight="600" letter-spacing="0.8">1 SHEET ｜ SERUM ○○mL</text><text x="65" y="139.6" class="c-ja" font-size="1.75" fill="#EFE8DA" text-anchor="middle" opacity="0.6">※1 整肌成分</text></svg></div>
+    </div>
+  </section>
+
+  <section class="sec" id="sealed">
+    <div class="wrap two">
+      <div class="reveal">
+        <div class="en" style="font-size:14px;color:var(--gold)">WHY SEALED</div>
+        <h2>鮮度という、<br>贅沢。</h2>
+        <p>グルタチオン<sup>※1</sup>は、酸素にふれると変化しやすい、繊細な成分です。</p>
+        <p>だから美容液とシートを別々の部屋に分け、使う直前まで封じこめました。仕切りの封を切った瞬間から、ふたつはひとつに。混ぜたての美容液を、そのまま肌にのせられます。</p>
+      </div>
+      <div class="dia reveal">
+        <svg viewBox="-20 0 380 380" role="img" aria-label="上の部屋に美容液、下の部屋にシート。仕切りの封を切って混ぜる">
+          <defs><linearGradient id="cd-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8955A"/><stop offset=".5" stop-color="#E6D3A3"/><stop offset="1" stop-color="#A9864D"/></linearGradient></defs>
+          <rect x="60" y="20" width="200" height="340" rx="14" fill="#fff" stroke="#1A2236" stroke-width="1.2"/>
+          <rect x="70" y="30" width="180" height="118" rx="8" fill="#15213B" opacity=".08"/>
+          <path d="M100 98 q8 -10 16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0" fill="none" stroke="#C8A96B" stroke-width="1.4"/>
+          <line x1="60" y1="164" x2="138" y2="164" stroke="url(#cd-gold)" stroke-width="1.6"/>
+          <line x1="182" y1="164" x2="260" y2="164" stroke="url(#cd-gold)" stroke-width="1.6"/>
+          <circle cx="160" cy="164" r="20" fill="url(#cd-gold)"/>
+          <text x="160" y="171" text-anchor="middle" font-family="Cormorant Garamond,serif" font-style="italic" font-weight="600" font-size="20" fill="#15213B">S</text>
+          <rect x="110" y="214" width="100" height="74" fill="none" stroke="#1A2236" stroke-width="1" opacity=".6"/>
+          <path d="M110 251 H210 M160 214 V288" stroke="#1A2236" stroke-width=".8" opacity=".3"/>
+          <g font-family="Cormorant Garamond,serif" font-size="13" letter-spacing="3" fill="#C8A96B" text-anchor="middle"><text x="160" y="62">SERUM</text><text x="160" y="330">SHEET</text></g>
+          <g font-family="Noto Serif JP,serif" font-size="12" fill="#1A2236" text-anchor="middle"><text x="160" y="80">美容液</text><text x="160" y="348">シート</text></g>
+          <g font-family="Noto Serif JP,serif" font-size="11" fill="#6B6F7A"><text x="270" y="168">← 封（仕切り）</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec navy" id="ritual">
+    <div class="wrap">
+      <div class="sh reveal"><div class="en">THE RITUAL</div><h2>今夜の、三つの所作。</h2><span class="rule"></span></div>
+      <div class="ritual reveal">
+        <div class="r"><div class="num">I</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 22 22" role="img" aria-label="押す"><rect x="5" y="5" width="10" height="14" rx="1.3" fill="none" stroke="#C8A96B" stroke-width="0.55"/><rect x="5.7" y="5.7" width="8.6" height="5" rx=".8" fill="#C8A96B" opacity=".35"/><line x1="5" y1="11.4" x2="15" y2="11.4" stroke="#C8A96B" stroke-width="0.385" stroke-dasharray="1 .8"/><rect x="7.2" y="13.6" width="5.6" height="3.4" fill="none" stroke="#C8A96B" stroke-width="0.30250000000000005" opacity=".6"/><path d="M10 0.6 V7.4" stroke="#C8A96B" stroke-width="0.6325" stroke-linecap="round"/><path d="M8.2 5.6 L10 7.6 L11.8 5.6" fill="none" stroke="#C8A96B" stroke-width="0.6325" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>封を切る</h3><p>美容液の部屋を手のひらで押して、仕切りの封をひらきます。</p></div>
+        <div class="r"><div class="num">II</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 22 22" role="img" aria-label="もむ"><rect x="5" y="5" width="10" height="14" rx="1.3" fill="none" stroke="#C8A96B" stroke-width="0.55"/><rect x="5.7" y="5.7" width="8.6" height="12.6" rx=".8" fill="#C8A96B" opacity=".28"/><path d="M7.2 12 q1.4 -1.3 2.8 0 t2.8 0" fill="none" stroke="#C8A96B" stroke-width="0.49500000000000005" stroke-linecap="round"/><path d="M3 8.5 Q0.8 12 3 15.5" fill="none" stroke="#C8A96B" stroke-width="0.55" stroke-linecap="round"/><path d="M1.6 14.6 L3 15.7 L3.6 14" fill="none" stroke="#C8A96B" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 15.5 Q19.2 12 17 8.5" fill="none" stroke="#C8A96B" stroke-width="0.55" stroke-linecap="round"/><path d="M18.4 9.4 L17 8.3 L16.4 10" fill="none" stroke="#C8A96B" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>なじませる</h3><p>袋の上から30秒ほどもんで、シートに美容液をいきわたらせます。</p></div>
+        <div class="r"><div class="num">III</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 22 22" role="img" aria-label="ひらく"><path d="M5 8 V17.7 Q5 19 6.3 19 H13.7 Q15 19 15 17.7 V8" fill="none" stroke="#C8A96B" stroke-width="0.55"/><path d="M7.6 12 V3.6 Q10 2.2 12.4 3.6 V12" fill="#fff" stroke="#C8A96B" stroke-width="0.385"/><path d="M8.6 6 q1.4 .8 2.8 0" fill="none" stroke="#C8A96B" stroke-width="0.275" opacity=".6"/><rect x="5.7" y="8.6" width="8.6" height="9.7" rx=".8" fill="#C8A96B" opacity=".28"/><g transform="rotate(-14 15 5)"><rect x="11.2" y="4.6" width="6.4" height="1.6" rx=".4" fill="none" stroke="#C8A96B" stroke-width="0.385"/></g><line x1="4.8" y1="7.2" x2="15.6" y2="7.2" stroke="#C8A96B" stroke-width="0.33" stroke-dasharray=".8 .7"/></svg><h3>身をゆだねる</h3><p>切り口から開けて顔に広げ、10〜15分。残った美容液は首すじへ。</p></div>
+      </div>
+      <p style="text-align:center;font-size:12px;opacity:.6;margin-top:26px">洗顔後の清潔な肌に。時間はめやすです（仮）。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="ingredient">
+    <div class="wrap two">
+      <div class="mol reveal">
+        <svg viewBox="0 0 360 260" role="img" aria-label="グルタチオンのつくり：グルタミン酸・システイン・グリシン">
+          <defs><linearGradient id="cm-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8955A"/><stop offset=".5" stop-color="#E6D3A3"/><stop offset="1" stop-color="#A9864D"/></linearGradient></defs>
+          <g stroke="#C8A96B" stroke-width="1"><line x1="80" y1="170" x2="180" y2="130"/><line x1="180" y1="130" x2="280" y2="170"/></g>
+          <line x1="180" y1="88" x2="180" y2="52" stroke="#C8A96B" stroke-width="1" stroke-dasharray="3 3"/>
+          <circle cx="80" cy="170" r="42" fill="none" stroke="#1A2236" stroke-width="1"/>
+          <circle cx="180" cy="130" r="42" fill="none" stroke="url(#cm-gold)" stroke-width="2"/>
+          <circle cx="280" cy="170" r="42" fill="none" stroke="#1A2236" stroke-width="1"/>
+          <circle cx="180" cy="36" r="16" fill="url(#cm-gold)"/>
+          <g font-family="Cormorant Garamond,serif" text-anchor="middle" fill="#1A2236" font-size="24">
+            <text x="80" y="174">Glu</text><text x="180" y="134">Cys</text><text x="280" y="174">Gly</text>
+            <text x="180" y="41" font-size="14" font-weight="600" fill="#15213B">SH</text>
+          </g>
+          <g font-family="Noto Serif JP,serif" text-anchor="middle" fill="#6B6F7A" font-size="11">
+            <text x="80" y="232">グルタミン酸</text><text x="180" y="192">システイン</text><text x="280" y="232">グリシン</text>
+          </g>
+        </svg>
+      </div>
+      <div class="reveal">
+        <div class="en" style="font-size:14px;color:var(--gold)">KEY INGREDIENT</div>
+        <h2>グルタチオン<sup>※1</sup></h2>
+        <p>グルタミン酸・システイン・グリシン。三つのアミノ酸がつながってできた成分です。</p>
+        <p>システインの部分（SH）が酸素にふれると変化しやすいため、使う直前まで、美容液の部屋に封じこめています。ほかの配合成分は、全成分が決まりしだいご紹介します。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec deep">
+    <div class="wrap">
+      <div class="sh reveal"><div class="en">TONIGHT</div><h2>たとえば、今夜の流れ。</h2><span class="rule"></span></div>
+      <div class="night reveal">
+        <div class="t"><div class="dot"><i></i></div><span class="en">STEP 1</span><h3>洗顔</h3><p>清潔な肌に整えて</p></div>
+        <div class="t main"><div class="dot"><i></i></div><span class="en">STEP 2</span><h3>SCELLÉ</h3><p>封を切って、10〜15分</p></div>
+        <div class="t"><div class="dot"><i></i></div><span class="en">STEP 3</span><h3>いつものケア</h3><p>乳液やクリームで仕上げて</p></div>
+        <div class="t"><div class="dot"><i></i></div><span class="en">GOOD NIGHT</span><h3>おやすみなさい</h3><p>一日の終わりに</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec ivory-d" id="gift">
+    <div class="wrap two">
+      <div class="photo reveal"><div><b>photo</b>撮影予定：ギフトボックスと袋<br>（箱の仕様は確認中）</div></div>
+      <div class="reveal">
+        <div class="en" style="font-size:14px;color:var(--gold)">GIFT</div>
+        <h2>大切な人へ、<br>封を切る楽しみを。</h2>
+        <p>がんばっているあの人に、一日の終わりの特別な時間を。封蝋のモチーフをあしらったギフトボックスでお届けします（予定）。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec navy">
+    <div class="wrap">
+      <div class="sh reveal"><div class="en">VOICES</div><h2>使った方の声</h2><p>感想が集まりしだい掲載します（ここは枠だけです）。</p></div>
+      <div class="voices reveal">
+        <div class="voice"><b>お客様の声 1</b>年代・肌の悩み・使った感想（実際の声を掲載）</div>
+        <div class="voice"><b>お客様の声 2</b>年代・肌の悩み・使った感想（実際の声を掲載）</div>
+        <div class="voice"><b>お客様の声 3</b>年代・肌の悩み・使った感想（実際の声を掲載）</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="offer">
+    <div class="wrap">
+      <div class="offer reveal">
+        <div class="pk2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 150" role="img" aria-label="タイプC パッケージ表面" style="letter-spacing:0" ><style>.c-en{font-family:"Cormorant Garamond",serif;font-feature-settings:"lnum"}.c-ja{font-family:"Noto Serif JP",serif;font-feature-settings:"palt"}</style><defs><radialGradient id="cF-bg" cx=".5" cy=".38" r=".85"><stop offset="0" stop-color="#22335C"/><stop offset=".55" stop-color="#15213B"/><stop offset="1" stop-color="#0E1729"/></radialGradient><linearGradient id="cF-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8955A"/><stop offset=".45" stop-color="#EAD9AC"/><stop offset=".7" stop-color="#C8A96B"/><stop offset="1" stop-color="#A9864D"/></linearGradient><path id="cF-ring" d="M65 66 m-10 0 a10 10 0 1 1 20 0 a10 10 0 1 1 -20 0"/></defs><rect width="130" height="150" rx="4" fill="url(#cF-bg)"/><line x1="0" y1="9" x2="6" y2="9" stroke="#C8A96B" stroke-width=".25" stroke-dasharray=".8 .8"/><text x="7.4" y="9.75" class="c-ja" font-size="1.8" fill="#C8A96B" opacity="0.8">ここから切る</text><rect x="6" y="13" width="118" height="131" rx="1.5" fill="none" stroke="url(#cF-gold)" stroke-width=".3"/><rect x="7.4" y="14.4" width="115.2" height="128.2" rx="1" fill="none" stroke="#C8A96B" stroke-width=".15" opacity=".6"/><text x="65" y="24.5" class="c-en" font-size="2.4" fill="#C8A96B" text-anchor="middle" font-weight="600" letter-spacing="1.3">NIGHT SERUM MASK</text><text x="65" y="38.5" class="c-en" font-size="13.5" fill="url(#cF-gold)" text-anchor="middle" font-weight="500" letter-spacing="2.6">SCELLÉ</text><text x="65" y="45.4" class="c-en" font-size="2.6" fill="#EFE8DA" text-anchor="middle" font-weight="600" letter-spacing="1.1" opacity="0.88">GLUTATHIONE SERUM MASK</text><text x="65" y="51.4" class="c-ja" font-size="2.6" fill="#EFE8DA" text-anchor="middle" opacity="0.88">グルタチオン<tspan font-size="1.7" dy="-1.1">※1</tspan><tspan dy="1.1"> 二層美容液マスク</tspan></text><line x1="9" y1="66" x2="50.5" y2="66" stroke="url(#cF-gold)" stroke-width=".35"/><line x1="79.5" y1="66" x2="121" y2="66" stroke="url(#cF-gold)" stroke-width=".35"/><path d="M78.04 66.00 L78.12 67.38 L77.64 68.69 L77.20 69.96 L76.84 71.27 L76.08 72.39 L74.88 73.18 L73.84 73.96 L73.28 75.19 L72.73 76.64 L71.69 77.59 L70.29 77.88 L68.91 78.05 L67.64 78.42 L66.33 78.61 L65.00 78.29 L63.74 77.95 L62.42 78.15 L60.92 78.57 L59.51 78.34 L58.48 77.30 L57.65 76.12 L56.68 75.24 L55.66 74.41 L54.95 73.30 L54.43 72.10 L53.57 71.09 L52.42 70.09 L51.75 68.82 L52.02 67.36 L52.64 66.00 L52.86 64.72 L52.80 63.41 L53.05 62.12 L53.64 60.94 L54.08 59.69 L54.33 58.25 L54.97 56.97 L56.28 56.32 L57.80 56.09 L58.99 55.59 L59.96 54.67 L61.06 53.89 L62.36 53.58 L63.67 53.35 L65.00 52.89 L66.40 52.69 L67.70 53.31 L68.77 54.41 L69.84 55.13 L71.18 55.30 L72.58 55.57 L73.67 56.37 L74.54 57.41 L75.50 58.37 L76.43 59.40 L76.78 60.76 L76.58 62.24 L76.60 63.53 L77.28 64.71 Z" fill="#A9864D"/><circle cx="65" cy="66" r="11.6" fill="url(#cF-gold)"/><circle cx="65" cy="66" r="8.6" fill="none" stroke="#15213B" stroke-width=".25" opacity=".55"/><text class="c-en" font-size="1.62" fill="#15213B" letter-spacing=".2" font-weight="600"><textPath href="#cF-ring" textLength="61.5" lengthAdjust="spacing">SEALED FRESHNESS · GLUTATHIONE SERUM MASK · </textPath></text><text x="65" y="69.1" class="c-en" font-size="9.0" fill="#15213B" text-anchor="middle" font-weight="600" font-style="italic">S</text><text x="65" y="92" class="c-ja" font-size="3.5" fill="#EFE8DA" text-anchor="middle" letter-spacing="0.35">封を切る、その瞬間まで。</text><text x="65" y="98.8" class="c-en" font-size="3.1" fill="#C8A96B" text-anchor="middle" letter-spacing="0.2" font-style="italic">Break the seal, right before use.</text><text x="65" y="118.5" class="c-ja" font-size="2.15" fill="#EFE8DA" text-anchor="middle" opacity="0.78">I 押す　　II なじませる　　III ひらく</text><text x="65" y="134.5" class="c-en" font-size="2.5" fill="#C8A96B" text-anchor="middle" font-weight="600" letter-spacing="0.8">1 SHEET ｜ SERUM ○○mL</text><text x="65" y="139.6" class="c-ja" font-size="1.75" fill="#EFE8DA" text-anchor="middle" opacity="0.6">※1 整肌成分</text></svg></div>
+        <div>
+          <div class="logo gold-text">SCELLÉ</div>
+          <h3>二層美容液マスク</h3>
+          <div class="price">
+            <div><span>1枚</span><b>¥○,○○○<small>（税込）</small></b></div>
+            <div><span>5枚入り ギフトボックス</span><b>¥○,○○○<small>（税込）</small></b></div>
+          </div>
+          <a class="btn solid" href="#">購入する</a>
+          <p class="tiny">価格・セット内容・送料は確定後に差し替えます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec ivory-d">
+    <div class="wrap">
+      <div class="sh reveal"><div class="en">Q &amp; A</div><h2>よくある質問</h2><span class="rule"></span></div>
+      <div class="faq reveal">
+        <details><summary>仕切りがかたくて、ひらかないときは？</summary><p>両手で美容液の部屋を包むように持ち、手のひら全体でゆっくり押してください。</p></details>
+        <details><summary>混ぜたあと、時間をおいてから使ってもいいですか？</summary><p>混ぜたての状態でお使いいただくための形です。封を切ったら、その場で使い切ってください。</p></details>
+        <details><summary>敏感肌でも使えますか？</summary><p>すべての方に肌トラブルが起きないわけではありません。はじめてのときは、腕の内側などで試してからお使いください。</p></details>
+        <details><summary>どのくらいの頻度で使えばいいですか？</summary><p>1回1枚。頻度のめやすは、メーカーの推奨に合わせて記載します（確認中）。</p></details>
+        <details><summary>ギフト包装はできますか？</summary><p>ギフトボックス入りをご用意する予定です（仕様は確認中）。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sh reveal"><div class="en">PRODUCT</div><h2>商品情報</h2><span class="rule"></span></div>
+      <dl class="info reveal">
+        <dt>販売名</dt><dd>（未定）</dd>
+        <dt>種類別名称</dt><dd>シートマスク（美容液）</dd>
+        <dt>内容量</dt><dd>1枚（美容液 ○○mL）</dd>
+        <dt>全成分</dt><dd>確認中（メーカーから受け取りしだい掲載）</dd>
+        <dt>使用上の注意</dt><dd>お肌に異常が生じていないかよく注意して使用してください。使用中または使用後に日光にあたって、赤み、はれ、かゆみ、刺激、色抜け（白斑等）や黒ずみ等の異常があらわれた場合は、使用を中止し、皮フ科専門医等へご相談ください。そのまま使用を続けると症状が悪化することがあります。傷やはれもの、しっしん等、異常のある部位にはお使いにならないでください。目に入ったときは、すぐに洗い流してください。混ぜたあとはすぐにお使いください。乳幼児の手の届かないところに保管してください。</dd>
+        <dt>製造販売元</dt><dd>（未定）</dd>
+      </dl>
+      <p class="fns">※1 整肌成分（配合目的は全成分の確定後に、メーカーの資料に合わせて直します）</p>
+    </div>
+  </section>
+</main>
+
+<footer class="ft">
+  <a class="logo gold-text" href="#top">SCELLÉ</a>
+  <nav><a href="https://beauty-log.jp/law/">特定商取引法に基づく表記</a><a href="https://beauty-log.jp/privacy/">プライバシーポリシー</a><a href="https://beauty-log.jp/contact/">お問い合わせ</a></nav>
+  <div style="font-size:12px;opacity:.6">© SCELLÉ（仮）</div>
+</footer>
+
+<div class="sticky"><a class="btn" href="#offer">購入する ― 1枚 ¥○,○○○（税込）〜</a></div>
+
+<script>
+(function () {
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(function (el) { el.classList.add('is-in'); }); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } });
+  }, { threshold: .15 });
+  els.forEach(function (el) { io.observe(el); });
+})();
+</script>
+</body>
+</html>
