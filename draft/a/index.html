@@ -3,161 +3,180 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PHASE LAB 二層美容液マスク｜混ぜるのは、使う直前。（デザイン案A）</title>
-<meta name="description" content="グルタチオンを、使う直前まで別の部屋に。押して、もんで、ひらく二層美容液マスク。">
+<title>GLUTA DUO 二層美容液マスク｜いつものケアに、混ぜたての一枚。（デザイン案A）</title>
+<meta name="description" content="美容液とシートを使う直前に混ぜる、グルタチオン配合の二層美容液マスク。">
 <!-- 下書きの間は noindex。公開するタイプは build.py の RELEASE で切り替える -->
 <meta name="robots" content="noindex,nofollow">
 <link rel="canonical" href="https://beauty-log.jp/draft/a/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:site_name" content="PHASE LAB">
+<meta property="og:site_name" content="GLUTA DUO">
 <meta property="og:url" content="https://beauty-log.jp/draft/a/">
-<meta property="og:title" content="PHASE LAB 二層美容液マスク｜混ぜるのは、使う直前。">
-<meta property="og:description" content="グルタチオンを、使う直前まで別の部屋に。押して、もんで、ひらく二層美容液マスク。">
+<meta property="og:title" content="GLUTA DUO 二層美容液マスク｜いつものケアに、混ぜたての一枚。">
+<meta property="og:description" content="美容液とシートを使う直前に混ぜる、グルタチオン配合の二層美容液マスク。">
 <meta property="og:image" content="https://beauty-log.jp/draft/a/ogp.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
 <style>
-:root { --ink:#1C2430; --sub:#4E5864; --line:#DCE1E5; --bg2:#F3F5F6; --amber:#B5692A; --amber-t:#9A5820; --amber-d:#7E4818; }
+:root { --navy:#1E3A5C; --navy-d:#142840; --blue:#2F6B8F; --sky:#BCD6E2; --sky2:#D2E4ED; --sky-l:#EEF5F8; --brown:#7B5134; --black:#1F2329; --ink:#1E2A38; --sub:#4A5867; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { margin:0; font-family:"Noto Sans JP",sans-serif; font-size:17px; color:var(--ink); background:#fff; line-height:1.85; letter-spacing:.03em; font-feature-settings:"palt"; -webkit-font-smoothing:antialiased; }
 a { color:inherit; }
 sup { font-size:.7em; vertical-align:super; line-height:0; }
-.en { font-family:"Inter",sans-serif; letter-spacing:.16em; }
+.serif { font-family:"Noto Serif JP",serif; }
+.ph { display:inline-block; }
 .wrap { max-width:1120px; margin:0 auto; padding:0 24px; }
-.note-bar { background:var(--ink); color:#fff; font-size:14px; text-align:center; padding:7px 12px; }
+.note-bar { background:var(--navy-d); color:#fff; font-size:14px; text-align:center; padding:7px 12px; }
+.stripe { background:repeating-linear-gradient(180deg, var(--sky2) 0 7px, var(--sky) 7px 16px); }
 
-.hd { position:sticky; top:0; z-index:20; background:rgba(255,255,255,.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+.hd { position:sticky; top:0; z-index:20; background:rgba(255,255,255,.95); backdrop-filter:blur(10px); border-bottom:3px solid var(--navy); }
 .hd .wrap { display:flex; align-items:center; justify-content:space-between; height:68px; }
-.logo { display:flex; align-items:center; gap:12px; font:600 18px "Inter",sans-serif; letter-spacing:.2em; text-decoration:none; white-space:nowrap; }
-@media (max-width:360px) { .logo { font-size:15px; letter-spacing:.12em; gap:8px; } }
-.logo svg { width:26px; height:26px; }
-.btn { display:inline-flex; align-items:center; justify-content:center; gap:12px; background:var(--amber-t); color:#fff; text-decoration:none; font-weight:700; border-radius:999px; padding:18px 40px; font-size:18px; letter-spacing:.08em; transition:background .2s; }
-.btn:hover { background:var(--amber-d); }
-.btn small { font-size:15px; font-weight:500; letter-spacing:.04em; }
-.btn.sm { padding:10px 22px; font-size:15px; }
+.logo { text-decoration:none; color:var(--navy); line-height:1.1; white-space:nowrap; }
+.logo b { display:block; font:600 28px "Cormorant Garamond",serif; letter-spacing:.08em; }
+.logo small { display:block; font:700 12px "Noto Sans JP",sans-serif; letter-spacing:.14em; }
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:12px; background:var(--navy); color:#fff; text-decoration:none; font-weight:700; border-radius:10px; padding:18px 40px; font-size:19px; letter-spacing:.08em; white-space:nowrap; flex-wrap:wrap; row-gap:2px; box-shadow:0 5px 0 var(--navy-d); transition:transform .1s, box-shadow .1s; }
+.btn:hover { transform:translateY(2px); box-shadow:0 3px 0 var(--navy-d); }
+.btn small { font-size:15px; font-weight:500; }
+.btn.sm { padding:9px 20px; font-size:15px; box-shadow:0 3px 0 var(--navy-d); }
 
-/* 1. ファーストビュー */
-.fv { position:relative; background:var(--bg2); overflow:hidden; }
-.fv::before { content:""; position:absolute; inset:0; background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px); background-size:48px 48px; opacity:.55; -webkit-mask-image:radial-gradient(ellipse at 70% 50%,#000 20%,transparent 75%); mask-image:radial-gradient(ellipse at 70% 50%,#000 20%,transparent 75%); }
-.fv .wrap { position:relative; display:grid; grid-template-columns:1.05fr .95fr; gap:40px; align-items:center; min-height:calc(100svh - 100px); padding-top:56px; padding-bottom:56px; }
-.fv h1 { font-size:clamp(44px,6.4vw,84px); font-weight:500; line-height:1.25; margin:0 0 28px; letter-spacing:.03em; }
-.fv .lead { font-size:clamp(18px,1.6vw,21px); margin:0 0 40px; line-height:1.9; }
-.fv .fn { font-size:15px; color:var(--sub); margin-top:20px; }
-.stage { position:relative; width:min(440px,80vw); margin:0 auto; }
-.stage .pouch { position:relative; transform:rotate(-3deg); filter:drop-shadow(0 28px 34px rgba(28,36,48,.22)); }
-.stage svg { display:block; width:100%; height:auto; }
-.drop { position:absolute; left:50%; top:30%; width:14px; height:19px; margin-left:-7px; background:var(--amber); border-radius:50% 50% 50% 50% / 60% 60% 40% 40%; opacity:0; animation:drop 3.4s cubic-bezier(.5,0,.6,1) 1 .8s both; }
-@keyframes drop { 0%{top:30%;opacity:0} 15%{opacity:.9} 62%{top:55%;opacity:.9} 80%{top:60%;opacity:0} 100%{top:60%;opacity:0} }
+/* バッジ（丸） */
+.badges { display:flex; gap:12px; flex-wrap:wrap; }
+.badge { width:114px; height:114px; border-radius:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; line-height:1.25; font-weight:700; }
+.badge b { font:700 25px "Noto Serif JP",serif; display:block; }
+.badge span { font-size:14px; letter-spacing:0; }
+.badge.sky { background:#DCEBF2; color:var(--navy); border:2px solid var(--navy); }
+.badge.brown { background:var(--brown); color:#fff; }
+.badge.black { background:var(--black); color:#fff; box-shadow:inset 0 0 0 4px var(--black), inset 0 0 0 5px rgba(255,255,255,.55); }
+.badge.black b { font-size:23px; }
 
-/* 共通の見出し */
-.sec { padding:128px 0; }
-.sec.gray { background:var(--bg2); }
-.sh { margin-bottom:56px; }
-.sh .no { font:500 15px "Inter",sans-serif; letter-spacing:.2em; color:var(--amber-t); display:flex; align-items:center; gap:14px; }
-.sh .no::after { content:""; width:56px; height:1px; background:var(--amber-t); }
-.sh h2 { font-size:clamp(32px,4.4vw,50px); font-weight:500; line-height:1.4; margin:16px 0 0; letter-spacing:.04em; }
+/* 1. ファーストビュー：ストライプ＋白い帯 */
+.fv { position:relative; overflow:hidden; }
+.fv .wrap { display:grid; grid-template-columns:1.1fr .9fr; gap:32px; align-items:center; padding-top:48px; padding-bottom:56px; }
+.fv .band { background:#fff; margin:0 -24px; padding:30px 24px 32px; border-top:2px solid var(--navy); border-bottom:2px solid var(--navy); position:relative; }
+.fv .band::before { content:""; position:absolute; top:-2px; bottom:-2px; right:100%; width:100vw; background:#fff; border-top:2px solid var(--navy); border-bottom:2px solid var(--navy); }
+.fv .brand { font:600 clamp(30px,3.4vw,42px) "Cormorant Garamond",serif; color:var(--navy); letter-spacing:.08em; margin:0 0 18px; line-height:1; }
+.fv .brand small { display:block; font:700 15px "Noto Sans JP",sans-serif; letter-spacing:.12em; margin-top:8px; }
+.fv h1 { font-family:"Noto Serif JP",serif; font-weight:700; font-size:clamp(38px,5vw,66px); line-height:1.4; margin:0; color:var(--navy); letter-spacing:.02em; }
+.fv .badges { margin:26px 0 30px; }
+.fv .fn { font-size:15px; color:var(--navy); margin:16px 0 0; font-weight:500; }
+.fv .pk { width:min(430px,78vw); margin:0 auto; transform:rotate(-3deg); filter:drop-shadow(0 26px 30px rgba(30,58,92,.28)); }
+.fv .pk svg { display:block; width:100%; height:auto; }
 
-/* 2. なぜ分けるのか */
-.why { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; }
-.why p { font-size:clamp(18px,1.6vw,21px); line-height:2; margin:0; }
-.mol { background:var(--bg2); border-radius:20px; padding:24px; }
-.mol svg { display:block; width:100%; height:auto; }
+/* 共通の見出し（白い帯に明朝） */
+.sec { padding:112px 0; }
+.sec.sky { background:var(--sky-l); }
+.sh { text-align:center; margin-bottom:52px; }
+.sh .lb { display:inline-block; background:var(--navy); color:#fff; font-weight:700; font-size:15px; letter-spacing:.14em; padding:4px 16px; border-radius:4px; }
+.sh h2 { font-family:"Noto Serif JP",serif; font-weight:700; font-size:clamp(30px,4vw,46px); line-height:1.5; margin:16px 0 0; color:var(--navy); }
+
+/* 2. 美容液＋シート */
+.eq { display:flex; align-items:center; justify-content:center; gap:22px; flex-wrap:wrap; }
+.eq .pair { display:flex; align-items:center; gap:22px; }
+.eq .eqop::after { content:"↓"; display:none; }
+.eq .it { text-align:center; }
+.eq .ic { width:150px; height:150px; border-radius:50%; display:grid; place-items:center; }
+.eq .ic svg { width:88px; height:88px; }
+.eq .ic.drop, .eq .ic.sheet { background:var(--sky-l); border:2px solid var(--sky); }
+.eq .it p { margin:12px 0 0; font-weight:700; font-size:20px; color:var(--navy); }
+.eq .op { font:700 44px "Noto Sans JP",sans-serif; color:var(--navy); }
+.eq .badge { width:150px; height:150px; }
+.eq .badge b { font-size:32px; }
+.eq .badge span { font-size:17px; }
+.why { max-width:760px; margin:44px auto 0; text-align:center; font-size:clamp(18px,1.6vw,20px); line-height:2; }
 
 /* 3. 使い方 */
-.steps { display:grid; grid-template-columns:repeat(3,1fr); gap:32px; }
-.step { border-top:2px solid var(--ink); padding-top:26px; }
-.step .top { display:flex; justify-content:space-between; align-items:flex-start; }
-.step .n { font:300 64px "Inter",sans-serif; line-height:1; }
-.step svg { width:96px; height:96px; }
-.step h3 { margin:18px 0 6px; font-size:26px; font-weight:700; }
+.steps { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.step { background:#fff; border:2px solid var(--sky); border-radius:16px; padding:30px 24px 28px; text-align:center; position:relative; }
+.step .n { position:absolute; top:-20px; left:50%; transform:translateX(-50%); width:40px; height:40px; border-radius:50%; background:var(--navy); color:#fff; font-weight:700; font-size:20px; display:grid; place-items:center; }
+.step svg { width:96px; height:96px; display:block; margin:6px auto 10px; }
+.step h3 { margin:0 0 4px; font-family:"Noto Serif JP",serif; font-size:26px; color:var(--navy); }
 .step p { margin:0; font-size:18px; }
-.howfn { margin-top:36px; font-size:16px; color:var(--sub); }
+.howfn { text-align:center; margin-top:30px; font-size:16px; color:var(--sub); }
 
 /* 4. 購入 */
-.offer { display:grid; grid-template-columns:.8fr 1.2fr; gap:64px; align-items:center; background:#fff; border:1px solid var(--line); border-radius:24px; padding:56px; }
-.offer .pouch svg { display:block; width:100%; height:auto; filter:drop-shadow(0 18px 24px rgba(28,36,48,.18)); }
-.offer h2 { margin:0 0 24px; font-size:clamp(26px,3vw,34px); font-weight:500; line-height:1.5; }
-.price div { display:flex; justify-content:space-between; align-items:baseline; padding:18px 0; border-bottom:1px solid var(--line); font-size:18px; }
-.price div:first-child { border-top:1px solid var(--line); }
-.price b { font:500 32px "Inter",sans-serif; letter-spacing:.02em; }
-.price b small { font:400 15px "Noto Sans JP",sans-serif; margin-left:4px; color:var(--sub); }
-.offer .btn { width:100%; margin-top:30px; padding:20px; font-size:19px; }
-.tiny { font-size:15px; color:var(--sub); margin-top:14px; }
+.offer { display:grid; grid-template-columns:.8fr 1.2fr; gap:56px; align-items:center; background:#fff; border:3px solid var(--navy); border-radius:20px; padding:52px; }
+.offer .pk svg { display:block; width:100%; height:auto; filter:drop-shadow(0 18px 24px rgba(30,58,92,.2)); }
+.offer h2 { margin:0 0 22px; font-family:"Noto Serif JP",serif; font-size:clamp(26px,3vw,34px); color:var(--navy); line-height:1.5; }
+.offer h2 small { display:block; font:600 22px "Cormorant Garamond",serif; letter-spacing:.1em; }
+.price div { display:flex; justify-content:space-between; align-items:baseline; padding:18px 0; border-bottom:1px dashed #9FB7C6; font-size:18px; }
+.price div:first-child { border-top:1px dashed #9FB7C6; }
+.price b { font-size:32px; font-weight:700; color:var(--navy); }
+.price b small { font-size:15px; font-weight:500; margin-left:4px; color:var(--sub); }
+.offer .btn { width:100%; margin-top:30px; padding:20px; }
+.tiny { font-size:15px; color:var(--sub); margin-top:16px; }
 
 /* 5. よくある質問 */
-.faq { max-width:860px; }
-.faq details { border-bottom:1px solid var(--line); }
-.faq details:first-child { border-top:1px solid var(--line); }
-.faq summary { list-style:none; cursor:pointer; padding:26px 44px 26px 0; position:relative; font-weight:700; font-size:19px; }
+.faq { max-width:860px; margin:0 auto; }
+.faq details { background:#fff; border:2px solid var(--sky); border-radius:12px; margin-bottom:12px; padding:0 24px; }
+.faq summary { list-style:none; cursor:pointer; padding:22px 40px 22px 0; position:relative; font-weight:700; font-size:19px; }
 .faq summary::-webkit-details-marker { display:none; }
-.faq summary::before { content:"Q"; font:600 18px "Inter",sans-serif; color:var(--amber-t); margin-right:16px; }
-.faq summary::after { content:""; position:absolute; right:10px; top:50%; width:12px; height:12px; border-right:2px solid var(--ink); border-bottom:2px solid var(--ink); transform:translateY(-70%) rotate(45deg); transition:transform .2s; }
-.faq details[open] summary::after { transform:translateY(-30%) rotate(225deg); }
-.faq details p { margin:0 0 26px 34px; font-size:17px; }
+.faq summary::before { content:"Q"; display:inline-grid; place-items:center; width:30px; height:30px; border-radius:50%; background:var(--navy); color:#fff; font-size:16px; margin-right:12px; vertical-align:1px; }
+.faq summary::after { content:"＋"; position:absolute; right:0; top:50%; transform:translateY(-52%); font-size:22px; color:var(--navy); }
+.faq details[open] summary::after { content:"－"; }
+.faq details p { margin:0; padding:0 0 22px 42px; font-size:17px; }
 
 /* 6. 商品情報 */
-.info { display:grid; grid-template-columns:180px 1fr; border-top:1px solid var(--line); font-size:15px; line-height:1.9; }
-.info dt, .info dd { margin:0; padding:18px 0; border-bottom:1px solid var(--line); }
-.info dt { color:var(--sub); font-weight:500; }
-.fns { font-size:15px; color:var(--sub); margin-top:24px; }
+.info { display:grid; grid-template-columns:180px 1fr; border-top:2px solid var(--navy); font-size:15px; line-height:1.9; }
+.info dt, .info dd { margin:0; padding:16px 0; border-bottom:1px solid #D5E2EA; }
+.info dt { color:var(--navy); font-weight:700; }
+.fns { font-size:15px; color:var(--sub); margin-top:22px; }
 
-.ft { background:var(--ink); color:#d5d9de; padding:60px 0 120px; font-size:15px; }
-.ft .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:24px; align-items:center; }
+.ft { background:var(--navy); color:#E3EBF1; padding:56px 0 120px; font-size:15px; }
+.ft .wrap { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px; }
 .ft .logo { color:#fff; }
-.ft .logo svg path:last-child { stroke:#fff; }
-.ft nav { display:flex; gap:28px; flex-wrap:wrap; }
-.ft nav a { text-decoration:none; }
+.ft nav { display:flex; gap:24px; flex-wrap:wrap; }
+.ft nav a { text-decoration:none; display:inline-flex; align-items:center; min-height:44px; }
 
-.sticky { position:fixed; left:0; right:0; bottom:0; z-index:30; display:none; padding:10px 14px calc(10px + env(safe-area-inset-bottom)); background:rgba(255,255,255,.95); backdrop-filter:blur(10px); border-top:1px solid var(--line); }
-.sticky .btn { width:100%; padding:16px; }
-
-.ph { display:inline-block; }
-.sticky { transform:translateY(110%); transition:transform .3s ease; }
+.sticky { position:fixed; left:0; right:0; bottom:0; z-index:30; padding:10px 14px calc(10px + env(safe-area-inset-bottom)); background:rgba(255,255,255,.96); border-top:2px solid var(--navy); display:none; transform:translateY(110%); transition:transform .3s ease; }
 .sticky.on { transform:none; }
+.sticky .btn { width:100%; padding:15px; }
+
 main, section[id] { scroll-margin-top:72px; }
-.ft nav a { display:inline-flex; align-items:center; min-height:44px; }
-.btn { white-space:nowrap; flex-wrap:wrap; row-gap:2px; }
-@media (max-width:420px) { .price div { display:grid; gap:2px; } .price b { justify-self:end; } }
-.js .reveal { opacity:0; transform:translateY(18px); transition:opacity .9s ease, transform .9s ease; }
+.js .reveal { opacity:0; transform:translateY(18px); transition:opacity .8s ease, transform .8s ease; }
 .js .reveal.is-in { opacity:1; transform:none; }
 
 @media (max-width:900px) {
   body { font-size:16px; }
   .note-bar { font-size:13px; }
-  .fv .wrap { grid-template-columns:1fr; min-height:auto; padding-top:28px; gap:28px; }
-  .stage { order:-1; width:min(250px,62vw); }
-  .fv h1 { margin-bottom:18px; }
-  .fv .lead { margin-bottom:28px; }
+  .fv .wrap { grid-template-columns:1fr; padding-top:26px; gap:22px; }
+  .fv .pk { order:-1; width:min(250px,62vw); }
+  .fv .brand { text-align:center; }
+  .fv .band { text-align:center; padding:22px 24px 24px; }
+  .fv h1 { font-size:min(9vw,44px); }
+  .fv .badges { justify-content:center; }
   .fv .btn { width:100%; }
-  .sec { padding:84px 0; }
+  .fv .fn { text-align:center; }
+  .badge { width:100px; height:100px; }
+  .badge b { font-size:22px; }
+  .badge span { font-size:13px; }
+  .fv .badges { gap:8px; }
+  .sec { padding:80px 0; }
   .sh { margin-bottom:36px; }
-  .why, .offer { grid-template-columns:1fr; gap:32px; }
-  .offer { padding:30px 22px; }
-  .offer .pouch { width:62%; margin:0 auto; }
-  .steps { grid-template-columns:1fr; gap:0; }
-  .step { display:grid; grid-template-columns:76px 1fr; column-gap:18px; border-top:1px solid var(--line); padding:22px 0; }
-  .step .top { grid-row:span 2; flex-direction:column; align-items:center; gap:4px; }
-  .step .n { font-size:15px; font-weight:600; color:var(--amber-t); }
-  .step svg { width:72px; height:72px; }
-  .step h3 { margin:4px 0 2px; font-size:22px; }
-  .step p { font-size:16px; }
-  .info { grid-template-columns:104px 1fr; font-size:15px; }
-  .mol { padding:12px; }
+  .eq { gap:6px; flex-direction:column; }
+  .eq .pair { gap:10px; }
+  .eq .eqop span { display:none; }
+  .eq .eqop::after { display:inline; }
+  .eq .ic, .eq .badge { width:114px; height:114px; }
+  .eq .ic svg { width:60px; height:60px; }
+  .eq .badge b { font-size:22px; }
+  .eq .badge span { font-size:13px; }
+  .eq .op { font-size:30px; }
+  .eq .it p { font-size:17px; }
+  .steps { grid-template-columns:1fr; gap:32px; }
+  .offer { grid-template-columns:1fr; padding:30px 22px; gap:28px; }
+  .offer .pk { width:62%; margin:0 auto; }
+  .info { grid-template-columns:104px 1fr; }
   .sticky { display:block; }
 }
-@media (prefers-reduced-motion:reduce) {
-  .drop { animation:none; }
-  main, section[id] { scroll-margin-top:72px; }
-.ft nav a { display:inline-flex; align-items:center; min-height:44px; }
-.btn { white-space:nowrap; flex-wrap:wrap; row-gap:2px; }
+@media (max-width:360px) { .logo b { font-size:22px; } .logo small { font-size:11px; } .btn.sm { padding:8px 14px; font-size:14px; } }
 @media (max-width:420px) { .price div { display:grid; gap:2px; } .price b { justify-self:end; } }
-.js .reveal { opacity:1; transform:none; transition:none; }
+@media (prefers-reduced-motion:reduce) {
+  .js .reveal { opacity:1; transform:none; transition:none; }
   html { scroll-behavior:auto; }
 }
 </style>
@@ -165,73 +184,67 @@ main, section[id] { scroll-margin-top:72px; }
 </head>
 <body>
 
-<div class="note-bar">デザイン案A（クリーン）｜名前・価格・成分は仮です</div>
+<div class="note-bar">デザイン案A（デイリー）｜名前・価格・成分は仮です</div>
 
 <header class="hd">
   <div class="wrap">
-    <a class="logo" href="#top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 -6 12 12" aria-hidden="true"><g transform="translate(0 0)"><path d="M-5 -0.45 A5 5 0 0 1 5 -0.45 Z" fill="#B5692A"/><path d="M-5 0.85 A5 5 0 0 0 5 0.85 Z" fill="none" stroke="#1C2430" stroke-width=".5"/></g></svg>PHASE LAB</a>
+    <a class="logo" href="#top"><b>GLUTA DUO</b><small>グルタデュオ</small></a>
     <a class="btn sm" href="#offer">購入する</a>
   </div>
 </header>
 
 <main id="top">
-  <section class="fv">
+  <section class="fv stripe">
     <div class="wrap">
       <div>
-        <h1>混ぜるのは、<br>使う直前。</h1>
-        <p class="lead"><span class="ph">グルタチオン<sup>※</sup>を、</span><span class="ph">使う直前まで別の部屋に。</span><br><span class="ph">混ぜたての美容液で、</span><span class="ph">ハリとうるおいを。</span></p>
+        <p class="brand">GLUTA DUO<small>グルタデュオ　二層美容液マスク</small></p>
+        <div class="band">
+          <h1><span class="ph">いつものケアに、</span><br><span class="ph">混ぜたての一枚。</span></h1>
+        </div>
+        <div class="badges">
+          <div class="badge sky"><span>グルタチオン<sup>※</sup></span><b>配合</b></div>
+          <div class="badge brown"><b>ハリ</b><span>うるおい</span></div>
+          <div class="badge black"><span>使う直前に</span><b>混ぜる</b></div>
+        </div>
         <a class="btn" href="#offer">購入する <small>1枚 ¥○○○（税込）〜</small></a>
         <p class="fn">※整肌成分</p>
       </div>
-      <div class="stage"><div class="pouch"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 150" role="img" aria-label="タイプA パッケージ表面" style="letter-spacing:0" ><style>.a-en{font-family:"Inter",sans-serif}.a-ja{font-family:"Noto Sans JP",sans-serif;font-feature-settings:"palt"}</style><defs><linearGradient id="aF-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F8F9F9"/><stop offset="1" stop-color="#EBEEEF"/></linearGradient></defs><rect width="130" height="150" rx="4" fill="url(#aF-bg)"/><rect x="1.6" y="1.6" width="126.8" height="146.8" rx="3" fill="none" stroke="#1C2430" stroke-opacity=".07" stroke-width=".3"/><g transform="translate(18.5 20.5)"><path d="M-6.5 -0.45 A6.5 6.5 0 0 1 6.5 -0.45 Z" fill="#B5692A"/><path d="M-6.5 0.85 A6.5 6.5 0 0 0 6.5 0.85 Z" fill="none" stroke="#1C2430" stroke-width=".5"/></g><text x="28.5" y="22.6" class="a-en" font-size="5.4" fill="#1C2430" font-weight="600" letter-spacing="1.2">PHASE LAB</text><text x="12" y="50" class="a-en" font-size="13.6" fill="#1C2430" font-weight="300" letter-spacing="0.2">GLUTATHIONE<tspan class="a-ja" font-size="5" dy="-5.6">※</tspan></text><line x1="3" y1="66" x2="127" y2="66" stroke="#B5692A" stroke-width=".5" stroke-dasharray="1.6 1.2"/><rect x="46.0" y="61.5" width="38" height="9" rx="4.5" fill="#B5692A"/><text x="63.02" y="67.3" class="a-en" font-size="3.6" fill="#fff" text-anchor="middle" font-weight="600" letter-spacing="0.9">PRESS</text><path d="M73.06 65.30 L74.36 66.80 L75.66 65.30" fill="none" stroke="#fff" stroke-width=".55" stroke-linecap="round" stroke-linejoin="round"/><text x="12" y="103" class="a-ja" font-size="8.4" fill="#1C2430" font-weight="500">二層美容液マスク</text><text x="12" y="140.5" class="a-ja" font-size="2.6" fill="#1C2430" opacity="0.75">※整肌成分</text></svg><span class="drop" aria-hidden="true"></span></div></div>
+      <div class="pk"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 150" role="img" aria-label="タイプA パッケージ表面" style="letter-spacing:0" ><style>.a-en{font-family:"Cormorant Garamond",serif;font-feature-settings:"lnum"}.a-ja{font-family:"Noto Serif JP",serif;font-feature-settings:"palt"}.a-sans{font-family:"Noto Sans JP",sans-serif;font-feature-settings:"palt"}</style><defs><pattern id="aF-st" width="4" height="2.6" patternUnits="userSpaceOnUse"><rect width="4" height="2.6" fill="#BCD6E2"/><rect width="4" height="1.2" fill="#D2E4ED"/></pattern></defs><rect width="130" height="150" rx="4" fill="url(#aF-st)"/><rect x="1.6" y="1.6" width="126.8" height="146.8" rx="3" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width=".35"/><text x="11" y="21" class="a-en" font-size="10.5" fill="#1E3A5C" font-weight="600" letter-spacing="0.6">GLUTA DUO</text><text x="11" y="28.6" class="a-ja" font-size="3.2" fill="#1E3A5C" font-weight="600">グルタデュオ　二層美容液マスク</text><rect x="99" y="11" width="21" height="12" fill="#fff" stroke="#1E3A5C" stroke-width=".5"/><text x="109.5" y="19.1" class="a-ja" font-size="4.4" fill="#1E3A5C" text-anchor="middle" font-weight="700">二層式</text><path d="M24 39.0 C28.0 44.0 29.6 47.0 29.6 49.2 A5.6 5.6 0 0 1 18.4 49.2 C18.4 47.0 20.0 44.0 24 39.0 Z" fill="#fff" stroke="#1E3A5C" stroke-width="0.5"/><text x="24" y="60.2" class="a-sans" font-size="2.8" fill="#1E3A5C" text-anchor="middle" font-weight="700">美容液</text><text x="40.5" y="49.6" class="a-sans" font-size="6" fill="#1E3A5C" text-anchor="middle" font-weight="700">＋</text><path d="M57 35.5 C65.0 35.5 65.6 42.5 65.0 48.5 C64.4 53.5 61.0 56.1 57 56.1 C53.0 56.1 49.6 53.5 49.0 48.5 C48.4 42.5 49.0 35.5 57 35.5 Z" fill="#fff" stroke="#1E3A5C" stroke-width="0.5"/><ellipse cx="53.6" cy="43.7" rx="2.0" ry="0.9" fill="#BCD6E2"/><ellipse cx="60.4" cy="43.7" rx="2.0" ry="0.9" fill="#BCD6E2"/><path d="M57 46.1 V48.5" stroke="#BCD6E2" stroke-width="0.7" stroke-linecap="round"/><ellipse cx="57" cy="51.3" rx="2.6" ry="0.8" fill="#BCD6E2"/><text x="57" y="60.2" class="a-sans" font-size="2.8" fill="#1E3A5C" text-anchor="middle" font-weight="700">シート</text><circle cx="99" cy="46" r="12.5" fill="#1F2329"/><circle cx="99" cy="46" r="11.3" fill="none" stroke="#fff" stroke-width=".25" opacity=".6"/><text x="99" y="43.4" class="a-sans" font-size="2.7" fill="#fff" text-anchor="middle" font-weight="700">使う直前に</text><text x="99" y="50.6" class="a-ja" font-size="5.2" fill="#fff" text-anchor="middle" font-weight="700">混ぜる</text><line x1="3" y1="66" x2="127" y2="66" stroke="#1E3A5C" stroke-width=".45" stroke-dasharray="1.6 1.1"/><rect x="45.0" y="61.8" width="40" height="8.4" rx="4.2" fill="#1E3A5C"/><text x="63.81" y="67.22" class="a-sans" font-size="3.4" fill="#fff" text-anchor="middle" font-weight="700">押して混ぜる</text><path d="M76.05 65.25 l1.53 1.43 l1.53 -1.43" fill="none" stroke="#fff" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"/><rect x="0" y="74" width="130" height="40" fill="#fff"/><line x1="0" y1="74.4" x2="130" y2="74.4" stroke="#1E3A5C" stroke-width=".3" opacity=".25"/><line x1="0" y1="113.6" x2="130" y2="113.6" stroke="#1E3A5C" stroke-width=".3" opacity=".25"/><text x="65" y="89.5" class="a-ja" font-size="9" fill="#1E3A5C" text-anchor="middle" font-weight="700">いつものケアに、</text><text x="65" y="104.5" class="a-ja" font-size="9" fill="#1E3A5C" text-anchor="middle" font-weight="700">混ぜたての一枚。</text><circle cx="24" cy="131" r="12.5" fill="#DCEBF2" stroke="#1E3A5C" stroke-width=".4"/><text x="24" y="128.7" class="a-sans" font-size="2.7" fill="#1E3A5C" text-anchor="middle" font-weight="700">グルタチオン<tspan font-size="1.9" dy="-1.2">※</tspan></text><text x="24" y="136.2" class="a-ja" font-size="5.2" fill="#1E3A5C" text-anchor="middle" font-weight="700">配合</text><circle cx="52.5" cy="131" r="12.5" fill="#7B5134"/><text x="52.5" y="129.6" class="a-ja" font-size="5" fill="#fff" text-anchor="middle" font-weight="700">ハリ</text><text x="52.5" y="135.6" class="a-sans" font-size="3.2" fill="#fff" text-anchor="middle" font-weight="700">うるおい</text><text x="119" y="128.5" class="a-ja" font-size="4.4" fill="#1E3A5C" text-anchor="end" font-weight="700">1枚入</text><text x="119" y="135" class="a-sans" font-size="3" fill="#1E3A5C" text-anchor="end" font-weight="500">美容液 ○○mL</text><text x="119" y="142.6" class="a-sans" font-size="2.6" fill="#1E3A5C" text-anchor="end" opacity="0.85">※整肌成分</text></svg></div>
     </div>
   </section>
 
   <section class="sec">
     <div class="wrap">
-      <div class="sh reveal"><div class="no en">01 WHY</div><h2>使う直前まで、<br>分けておく。</h2></div>
-      <div class="why">
-        <div class="mol reveal">
-          <svg viewBox="0 0 360 244" role="img" aria-label="グルタチオンのつくり：グルタミン酸・システイン・グリシン。システインのSHが酸化しやすい">
-            <g stroke="#1C2430" stroke-width="1.4" opacity=".45"><line x1="74" y1="160" x2="180" y2="126"/><line x1="180" y1="126" x2="286" y2="160"/></g>
-            <line x1="180" y1="84" x2="180" y2="54" stroke="#B5692A" stroke-width="1.6" stroke-dasharray="4 3"/>
-            <circle cx="74" cy="160" r="44" fill="#fff" stroke="#1C2430" stroke-width="1.4"/>
-            <circle cx="180" cy="126" r="44" fill="#F5EADF" stroke="#B5692A" stroke-width="1.8"/>
-            <circle cx="286" cy="160" r="44" fill="#fff" stroke="#1C2430" stroke-width="1.4"/>
-            <circle cx="180" cy="34" r="21" fill="#B5692A"/>
-            <g font-family="Inter,sans-serif" text-anchor="middle" fill="#1C2430" font-weight="400">
-              <text x="74" y="169" font-size="28">Glu</text><text x="180" y="135" font-size="28">Cys</text><text x="286" y="169" font-size="28">Gly</text>
-              <text x="180" y="40" font-size="16" font-weight="600" fill="#fff">SH</text>
-            </g>
-            <g font-family="Noto Sans JP,sans-serif" text-anchor="middle" fill="#1C2430" font-size="19" font-weight="500">
-              <text x="74" y="232">グルタミン酸</text><text x="180" y="198">システイン</text><text x="286" y="232">グリシン</text>
-            </g>
-            <text x="210" y="41" font-family="Noto Sans JP,sans-serif" font-size="19" font-weight="700" fill="#9A5820">← 酸化しやすい</text>
-          </svg>
-        </div>
-        <p class="reveal"><span class="ph">グルタチオン<sup>※</sup>は、</span><span class="ph">酸素にふれると</span><span class="ph">変わりやすい成分です。</span><br><span class="ph">だから美容液は</span><span class="ph">シートと別の部屋に入れ、</span><span class="ph">使う直前に混ぜる形にしました。</span></p>
+      <div class="sh reveal"><span class="lb">二層式のしくみ</span><h2><span class="ph">美容液とシートは、</span><span class="ph">使う直前まで別々。</span></h2></div>
+      <div class="eq reveal">
+        <div class="pair"><div class="it"><div class="ic drop"><svg viewBox="-8 -9 16 18" aria-hidden="true"><path d="M0 -7 C4 -2 5.6 1 5.6 3.2 A5.6 5.6 0 0 1 -5.6 3.2 C-5.6 1 -4 -2 0 -7 Z" fill="#fff" stroke="#1E3A5C" stroke-width=".7"/></svg></div><p>美容液</p></div>
+        <div class="op">＋</div>
+        <div class="it"><div class="ic sheet"><svg viewBox="-10 -11.5 20 23" aria-hidden="true"><path d="M0 -10 C8 -10 8.6 -3 8 3 C7.4 8 4 10.6 0 10.6 C-4 10.6 -7.4 8 -8 3 C-8.6 -3 -8 -10 0 -10 Z" fill="#fff" stroke="#1E3A5C" stroke-width=".7"/><ellipse cx="-3.4" cy="-1.8" rx="2" ry=".9" fill="#BCD6E2"/><ellipse cx="3.4" cy="-1.8" rx="2" ry=".9" fill="#BCD6E2"/><path d="M0 .6 V3" stroke="#BCD6E2" stroke-width=".7" stroke-linecap="round"/><ellipse cx="0" cy="5.8" rx="2.6" ry=".8" fill="#BCD6E2"/></svg></div><p>シート</p></div></div>
+        <div class="op eqop"><span>＝</span></div>
+        <div class="it"><div class="badge black"><span>使う直前に</span><b>混ぜる</b></div><p>押すだけ</p></div>
       </div>
+      <p class="why reveal"><span class="ph">グルタチオン<sup>※</sup>は、</span><span class="ph">酸素にふれると変わりやすい成分。</span><br><span class="ph">だから美容液はシートと別の部屋に入れ、</span><span class="ph">使う直前に混ぜる形にしました。</span></p>
     </div>
   </section>
 
-  <section class="sec gray">
+  <section class="sec sky">
     <div class="wrap">
-      <div class="sh reveal"><div class="no en">02 HOW TO USE</div><h2><span class="ph">押して、</span><span class="ph">もんで、</span><span class="ph">ひらく。</span></h2></div>
+      <div class="sh reveal"><span class="lb">使い方</span><h2><span class="ph">押して、</span><span class="ph">もんで、</span><span class="ph">ひらくだけ。</span></h2></div>
       <div class="steps">
-        <div class="step reveal"><div class="top"><div class="n">01</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 22 22" role="img" aria-label="押す"><rect x="5" y="5" width="10" height="14" rx="1.3" fill="none" stroke="#1C2430" stroke-width="0.55"/><rect x="5.7" y="5.7" width="8.6" height="5" rx=".8" fill="#B5692A" opacity=".35"/><line x1="5" y1="11.4" x2="15" y2="11.4" stroke="#1C2430" stroke-width="0.385" stroke-dasharray="1 .8"/><rect x="7.2" y="13.6" width="5.6" height="3.4" fill="none" stroke="#1C2430" stroke-width="0.30250000000000005" opacity=".6"/><path d="M10 0.6 V7.4" stroke="#B5692A" stroke-width="0.6325" stroke-linecap="round"/><path d="M8.2 5.6 L10 7.6 L11.8 5.6" fill="none" stroke="#B5692A" stroke-width="0.6325" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>押す</h3><p>上の部屋を押して、仕切りをひらく。</p></div>
-        <div class="step reveal"><div class="top"><div class="n">02</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 22 22" role="img" aria-label="もむ"><rect x="5" y="5" width="10" height="14" rx="1.3" fill="none" stroke="#1C2430" stroke-width="0.55"/><rect x="5.7" y="5.7" width="8.6" height="12.6" rx=".8" fill="#B5692A" opacity=".28"/><path d="M7.2 12 q1.4 -1.3 2.8 0 t2.8 0" fill="none" stroke="#B5692A" stroke-width="0.49500000000000005" stroke-linecap="round"/><path d="M3 8.5 Q0.8 12 3 15.5" fill="none" stroke="#B5692A" stroke-width="0.55" stroke-linecap="round"/><path d="M1.6 14.6 L3 15.7 L3.6 14" fill="none" stroke="#B5692A" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 15.5 Q19.2 12 17 8.5" fill="none" stroke="#B5692A" stroke-width="0.55" stroke-linecap="round"/><path d="M18.4 9.4 L17 8.3 L16.4 10" fill="none" stroke="#B5692A" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>もむ</h3><p>袋の上から30秒ほどもむ。</p></div>
-        <div class="step reveal"><div class="top"><div class="n">03</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 22 22" role="img" aria-label="ひらく"><path d="M5 8 V17.7 Q5 19 6.3 19 H13.7 Q15 19 15 17.7 V8" fill="none" stroke="#1C2430" stroke-width="0.55"/><path d="M7.6 12 V3.6 Q10 2.2 12.4 3.6 V12" fill="#fff" stroke="#1C2430" stroke-width="0.385"/><path d="M8.6 6 q1.4 .8 2.8 0" fill="none" stroke="#1C2430" stroke-width="0.275" opacity=".6"/><rect x="5.7" y="8.6" width="8.6" height="9.7" rx=".8" fill="#B5692A" opacity=".28"/><g transform="rotate(-14 15 5)"><rect x="11.2" y="4.6" width="6.4" height="1.6" rx=".4" fill="none" stroke="#1C2430" stroke-width="0.385"/></g><line x1="4.8" y1="7.2" x2="15.6" y2="7.2" stroke="#B5692A" stroke-width="0.33" stroke-dasharray=".8 .7"/></svg></div><h3>ひらく</h3><p>顔にのせて10〜15分。</p></div>
+        <div class="step reveal"><div class="n">1</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 22 22" role="img" aria-label="押す"><rect x="5" y="5" width="10" height="14" rx="1.3" fill="none" stroke="#1E3A5C" stroke-width="0.55"/><rect x="5.7" y="5.7" width="8.6" height="5" rx=".8" fill="#2F6B8F" opacity=".35"/><line x1="5" y1="11.4" x2="15" y2="11.4" stroke="#1E3A5C" stroke-width="0.385" stroke-dasharray="1 .8"/><rect x="7.2" y="13.6" width="5.6" height="3.4" fill="none" stroke="#1E3A5C" stroke-width="0.30250000000000005" opacity=".6"/><path d="M10 0.6 V7.4" stroke="#2F6B8F" stroke-width="0.6325" stroke-linecap="round"/><path d="M8.2 5.6 L10 7.6 L11.8 5.6" fill="none" stroke="#2F6B8F" stroke-width="0.6325" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>押す</h3><p>上の部屋を押して、仕切りをひらく。</p></div>
+        <div class="step reveal"><div class="n">2</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 22 22" role="img" aria-label="もむ"><rect x="5" y="5" width="10" height="14" rx="1.3" fill="none" stroke="#1E3A5C" stroke-width="0.55"/><rect x="5.7" y="5.7" width="8.6" height="12.6" rx=".8" fill="#2F6B8F" opacity=".28"/><path d="M7.2 12 q1.4 -1.3 2.8 0 t2.8 0" fill="none" stroke="#2F6B8F" stroke-width="0.49500000000000005" stroke-linecap="round"/><path d="M3 8.5 Q0.8 12 3 15.5" fill="none" stroke="#2F6B8F" stroke-width="0.55" stroke-linecap="round"/><path d="M1.6 14.6 L3 15.7 L3.6 14" fill="none" stroke="#2F6B8F" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 15.5 Q19.2 12 17 8.5" fill="none" stroke="#2F6B8F" stroke-width="0.55" stroke-linecap="round"/><path d="M18.4 9.4 L17 8.3 L16.4 10" fill="none" stroke="#2F6B8F" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>もむ</h3><p>袋の上から30秒ほどもむ。</p></div>
+        <div class="step reveal"><div class="n">3</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 22 22" role="img" aria-label="ひらく"><path d="M5 8 V17.7 Q5 19 6.3 19 H13.7 Q15 19 15 17.7 V8" fill="none" stroke="#1E3A5C" stroke-width="0.55"/><path d="M7.6 12 V3.6 Q10 2.2 12.4 3.6 V12" fill="#fff" stroke="#1E3A5C" stroke-width="0.385"/><path d="M8.6 6 q1.4 .8 2.8 0" fill="none" stroke="#1E3A5C" stroke-width="0.275" opacity=".6"/><rect x="5.7" y="8.6" width="8.6" height="9.7" rx=".8" fill="#2F6B8F" opacity=".28"/><g transform="rotate(-14 15 5)"><rect x="11.2" y="4.6" width="6.4" height="1.6" rx=".4" fill="none" stroke="#1E3A5C" stroke-width="0.385"/></g><line x1="4.8" y1="7.2" x2="15.6" y2="7.2" stroke="#2F6B8F" stroke-width="0.33" stroke-dasharray=".8 .7"/></svg><h3>ひらく</h3><p>顔にのせて10〜15分。</p></div>
       </div>
       <p class="howfn">洗顔後の肌に。時間はめやすです（仮）。</p>
     </div>
   </section>
 
-  <section class="sec" id="offer">
+  <section class="sec stripe" id="offer">
     <div class="wrap">
       <div class="offer reveal">
-        <div class="pouch"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 150" role="img" aria-label="タイプA パッケージ表面" style="letter-spacing:0" ><style>.a-en{font-family:"Inter",sans-serif}.a-ja{font-family:"Noto Sans JP",sans-serif;font-feature-settings:"palt"}</style><defs><linearGradient id="aF2-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F8F9F9"/><stop offset="1" stop-color="#EBEEEF"/></linearGradient></defs><rect width="130" height="150" rx="4" fill="url(#aF2-bg)"/><rect x="1.6" y="1.6" width="126.8" height="146.8" rx="3" fill="none" stroke="#1C2430" stroke-opacity=".07" stroke-width=".3"/><g transform="translate(18.5 20.5)"><path d="M-6.5 -0.45 A6.5 6.5 0 0 1 6.5 -0.45 Z" fill="#B5692A"/><path d="M-6.5 0.85 A6.5 6.5 0 0 0 6.5 0.85 Z" fill="none" stroke="#1C2430" stroke-width=".5"/></g><text x="28.5" y="22.6" class="a-en" font-size="5.4" fill="#1C2430" font-weight="600" letter-spacing="1.2">PHASE LAB</text><text x="12" y="50" class="a-en" font-size="13.6" fill="#1C2430" font-weight="300" letter-spacing="0.2">GLUTATHIONE<tspan class="a-ja" font-size="5" dy="-5.6">※</tspan></text><line x1="3" y1="66" x2="127" y2="66" stroke="#B5692A" stroke-width=".5" stroke-dasharray="1.6 1.2"/><rect x="46.0" y="61.5" width="38" height="9" rx="4.5" fill="#B5692A"/><text x="63.02" y="67.3" class="a-en" font-size="3.6" fill="#fff" text-anchor="middle" font-weight="600" letter-spacing="0.9">PRESS</text><path d="M73.06 65.30 L74.36 66.80 L75.66 65.30" fill="none" stroke="#fff" stroke-width=".55" stroke-linecap="round" stroke-linejoin="round"/><text x="12" y="103" class="a-ja" font-size="8.4" fill="#1C2430" font-weight="500">二層美容液マスク</text><text x="12" y="140.5" class="a-ja" font-size="2.6" fill="#1C2430" opacity="0.75">※整肌成分</text></svg></div>
+        <div class="pk"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 150" role="img" aria-label="タイプA パッケージ表面" style="letter-spacing:0" ><style>.a-en{font-family:"Cormorant Garamond",serif;font-feature-settings:"lnum"}.a-ja{font-family:"Noto Serif JP",serif;font-feature-settings:"palt"}.a-sans{font-family:"Noto Sans JP",sans-serif;font-feature-settings:"palt"}</style><defs><pattern id="aF2-st" width="4" height="2.6" patternUnits="userSpaceOnUse"><rect width="4" height="2.6" fill="#BCD6E2"/><rect width="4" height="1.2" fill="#D2E4ED"/></pattern></defs><rect width="130" height="150" rx="4" fill="url(#aF2-st)"/><rect x="1.6" y="1.6" width="126.8" height="146.8" rx="3" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width=".35"/><text x="11" y="21" class="a-en" font-size="10.5" fill="#1E3A5C" font-weight="600" letter-spacing="0.6">GLUTA DUO</text><text x="11" y="28.6" class="a-ja" font-size="3.2" fill="#1E3A5C" font-weight="600">グルタデュオ　二層美容液マスク</text><rect x="99" y="11" width="21" height="12" fill="#fff" stroke="#1E3A5C" stroke-width=".5"/><text x="109.5" y="19.1" class="a-ja" font-size="4.4" fill="#1E3A5C" text-anchor="middle" font-weight="700">二層式</text><path d="M24 39.0 C28.0 44.0 29.6 47.0 29.6 49.2 A5.6 5.6 0 0 1 18.4 49.2 C18.4 47.0 20.0 44.0 24 39.0 Z" fill="#fff" stroke="#1E3A5C" stroke-width="0.5"/><text x="24" y="60.2" class="a-sans" font-size="2.8" fill="#1E3A5C" text-anchor="middle" font-weight="700">美容液</text><text x="40.5" y="49.6" class="a-sans" font-size="6" fill="#1E3A5C" text-anchor="middle" font-weight="700">＋</text><path d="M57 35.5 C65.0 35.5 65.6 42.5 65.0 48.5 C64.4 53.5 61.0 56.1 57 56.1 C53.0 56.1 49.6 53.5 49.0 48.5 C48.4 42.5 49.0 35.5 57 35.5 Z" fill="#fff" stroke="#1E3A5C" stroke-width="0.5"/><ellipse cx="53.6" cy="43.7" rx="2.0" ry="0.9" fill="#BCD6E2"/><ellipse cx="60.4" cy="43.7" rx="2.0" ry="0.9" fill="#BCD6E2"/><path d="M57 46.1 V48.5" stroke="#BCD6E2" stroke-width="0.7" stroke-linecap="round"/><ellipse cx="57" cy="51.3" rx="2.6" ry="0.8" fill="#BCD6E2"/><text x="57" y="60.2" class="a-sans" font-size="2.8" fill="#1E3A5C" text-anchor="middle" font-weight="700">シート</text><circle cx="99" cy="46" r="12.5" fill="#1F2329"/><circle cx="99" cy="46" r="11.3" fill="none" stroke="#fff" stroke-width=".25" opacity=".6"/><text x="99" y="43.4" class="a-sans" font-size="2.7" fill="#fff" text-anchor="middle" font-weight="700">使う直前に</text><text x="99" y="50.6" class="a-ja" font-size="5.2" fill="#fff" text-anchor="middle" font-weight="700">混ぜる</text><line x1="3" y1="66" x2="127" y2="66" stroke="#1E3A5C" stroke-width=".45" stroke-dasharray="1.6 1.1"/><rect x="45.0" y="61.8" width="40" height="8.4" rx="4.2" fill="#1E3A5C"/><text x="63.81" y="67.22" class="a-sans" font-size="3.4" fill="#fff" text-anchor="middle" font-weight="700">押して混ぜる</text><path d="M76.05 65.25 l1.53 1.43 l1.53 -1.43" fill="none" stroke="#fff" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"/><rect x="0" y="74" width="130" height="40" fill="#fff"/><line x1="0" y1="74.4" x2="130" y2="74.4" stroke="#1E3A5C" stroke-width=".3" opacity=".25"/><line x1="0" y1="113.6" x2="130" y2="113.6" stroke="#1E3A5C" stroke-width=".3" opacity=".25"/><text x="65" y="89.5" class="a-ja" font-size="9" fill="#1E3A5C" text-anchor="middle" font-weight="700">いつものケアに、</text><text x="65" y="104.5" class="a-ja" font-size="9" fill="#1E3A5C" text-anchor="middle" font-weight="700">混ぜたての一枚。</text><circle cx="24" cy="131" r="12.5" fill="#DCEBF2" stroke="#1E3A5C" stroke-width=".4"/><text x="24" y="128.7" class="a-sans" font-size="2.7" fill="#1E3A5C" text-anchor="middle" font-weight="700">グルタチオン<tspan font-size="1.9" dy="-1.2">※</tspan></text><text x="24" y="136.2" class="a-ja" font-size="5.2" fill="#1E3A5C" text-anchor="middle" font-weight="700">配合</text><circle cx="52.5" cy="131" r="12.5" fill="#7B5134"/><text x="52.5" y="129.6" class="a-ja" font-size="5" fill="#fff" text-anchor="middle" font-weight="700">ハリ</text><text x="52.5" y="135.6" class="a-sans" font-size="3.2" fill="#fff" text-anchor="middle" font-weight="700">うるおい</text><text x="119" y="128.5" class="a-ja" font-size="4.4" fill="#1E3A5C" text-anchor="end" font-weight="700">1枚入</text><text x="119" y="135" class="a-sans" font-size="3" fill="#1E3A5C" text-anchor="end" font-weight="500">美容液 ○○mL</text><text x="119" y="142.6" class="a-sans" font-size="2.6" fill="#1E3A5C" text-anchor="end" opacity="0.85">※整肌成分</text></svg></div>
         <div>
-          <h2>PHASE LAB<br>二層美容液マスク</h2>
+          <h2><small>GLUTA DUO</small>グルタデュオ<br>二層美容液マスク</h2>
           <div class="price">
             <div><span>1枚</span><b>¥○○○<small>税込</small></b></div>
             <div><span>5枚セット</span><b>¥○,○○○<small>税込</small></b></div>
@@ -243,9 +256,9 @@ main, section[id] { scroll-margin-top:72px; }
     </div>
   </section>
 
-  <section class="sec gray" id="faq">
+  <section class="sec sky">
     <div class="wrap">
-      <div class="sh reveal"><div class="no en">03 FAQ</div><h2>よくある質問</h2></div>
+      <div class="sh reveal"><span class="lb">Q&amp;A</span><h2>よくある質問</h2></div>
       <div class="faq reveal">
         <details><summary>仕切りがひらかないときは？</summary><p>両手で上の部屋を包み、手のひら全体でゆっくり押してください。</p></details>
         <details><summary>混ぜたあと、時間をおいて使えますか？</summary><p>混ぜたら、その場で使い切ってください。</p></details>
@@ -256,7 +269,7 @@ main, section[id] { scroll-margin-top:72px; }
 
   <section class="sec">
     <div class="wrap">
-      <div class="sh reveal"><div class="no en">04 PRODUCT</div><h2>商品情報</h2></div>
+      <div class="sh reveal"><span class="lb">商品情報</span><h2>商品情報</h2></div>
       <dl class="info reveal">
         <dt>販売名</dt><dd>（未定）</dd>
         <dt>種類別名称</dt><dd>シートマスク（美容液）</dd>
@@ -272,7 +285,7 @@ main, section[id] { scroll-margin-top:72px; }
 
 <footer class="ft">
   <div class="wrap">
-    <a class="logo" href="#top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 -6 12 12" aria-hidden="true"><g transform="translate(0 0)"><path d="M-5 -0.45 A5 5 0 0 1 5 -0.45 Z" fill="#B5692A"/><path d="M-5 0.85 A5 5 0 0 0 5 0.85 Z" fill="none" stroke="#1C2430" stroke-width=".5"/></g></svg>PHASE LAB</a>
+    <a class="logo" href="#top"><b>GLUTA DUO</b><small>グルタデュオ</small></a>
     <nav><a href="https://beauty-log.jp/law/">特定商取引法に基づく表記</a><a href="https://beauty-log.jp/privacy/">プライバシーポリシー</a><a href="https://beauty-log.jp/contact/">お問い合わせ</a></nav>
   </div>
 </footer>
